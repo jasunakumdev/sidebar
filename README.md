@@ -236,16 +236,6 @@ declare module '@mui/material/styles' {
 
 ---
 
-## 👨‍💻 Author
-
-**Jasu Nakum**
-
----
-
 ## 📄 License
 
 MIT © 2025
-
-```
-
-```
