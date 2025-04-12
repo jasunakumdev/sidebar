@@ -9,8 +9,6 @@ This package helps you easily integrate a sidebar menu into your React applicati
 - MUI theme support
 - Custom styling through theme overrides
 
----
-
 ## Screenshot
 
 ![react-pro-sidebar](./public/mui-react-sidebar.jpg)
@@ -37,8 +35,6 @@ or
 ```bash
 yarn add mui-react-sidebar
 ```
-
----
 
 ## 📦 Usage
 
@@ -135,8 +131,6 @@ export default function App() {
 }
 ```
 
----
-
 ## 🎨 Theme Integration
 
 By default, the sidebar styling pulls values from the MUI theme:
@@ -147,8 +141,6 @@ By default, the sidebar styling pulls values from the MUI theme:
 | Sidebar Background       | `theme.palette.background.default` |
 | Selected Item Background | `theme.palette.action.selected`    |
 | Selected Text Color      | `theme.palette.primary.main`       |
-
----
 
 ## 🧑‍🎨 Custom Theme Overrides
 
@@ -187,8 +179,6 @@ const theme = createTheme({
 | `badgeColor`   | Text color of badge               | MUI default                        |
 | `selected`     | Background color of selected item | `theme.palette.action.selected`    |
 | `menuIconTop`  | Set menu icon top position        | 10                                 |
-
----
 
 ## 🛠️ Custom Theming
 
@@ -237,8 +227,6 @@ declare module '@mui/material/styles' {
 - Supports **React 18+** and **MUI v5+**
 - Designed for dashboards, admin panels, and CMS interfaces
 - Automatically adapts to MUI theme (light/dark)
-
----
 
 ## 📄 License
 
