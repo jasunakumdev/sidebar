@@ -11,6 +11,10 @@ This package helps you easily integrate a sidebar menu into your React applicati
 
 ---
 
+## Screenshot
+
+![react-pro-sidebar](./public/mui-react-sidebar.jpg)
+
 ## ✨ Features
 
 - ⚙️ Dynamic Sidebar Configuration using JS objects
