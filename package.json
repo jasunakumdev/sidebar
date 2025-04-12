@@ -1,0 +1,65 @@
+{
+  "name": "mui-react-sidebar",
+  "private": false,
+  "version": "1.0.0",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly && cp src/Sidebar/*.svg dist/",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "sidebar",
+    "mui",
+    "sidebar-component",
+    "vite",
+    "mui-sidebar",
+    "mui-react-sidebar"
+  ],
+  "author": "Jasu Nakum",
+  "peerDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.1",
+    "@mui/material": "^7.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@eslint/js": "^9.21.0",
+    "@mui/icons-material": "^7.0.1",
+    "@mui/material": "^7.0.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "path": "^0.12.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0",
+    "vite-plugin-svgr": "^4.3.0"
+  },
+  "resolutions": {
+    "react": "19.0.0",
+    "@mui/material": "7.0.1"
+  }
+}

@@ -1,0 +1,113 @@
+.sidebar {
+  width: var(--sidebar-width, 270px);
+  height: 100vh;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--sidebar-bg, #ffffff);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-button {
+    display: none !important;
+  }
+}
+
+.list-item-button {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  border-radius: 8px !important;
+}
+
+.list-item-button .MuiListItemIcon-root {
+  transition: color 0.3s ease;
+}
+
+.list-item-button.selected .MuiListItemIcon-root {
+  color: rgb(240, 92, 98);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.logo img {
+  width: 36px;
+  margin-right: 10px;
+}
+
+.sidebar-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-right: -8px;
+}
+
+.sidebar-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-list::-webkit-scrollbar-thumb {
+  background-color: rgb(236, 242, 255);
+  border-radius: 10px;
+  height: 10px;
+}
+
+.sidebar-list::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.nested-menu {
+  position: relative;
+  padding-left: 20px;
+}
+
+.nested-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  bottom: 0;
+  width: 1px;
+  background-color: #919eab;
+}
+
+.nested-list-item::before {
+  left: -24px;
+  top: 13px;
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  transform: translate(
+    calc(var(--nav-bullet-size) * -1),
+    calc(var(--nav-bullet-size) * -0.4)
+  );
+  background-color: #919eab;
+  mask: url('./shape.svg') 100% 50% / 100% no-repeat;
+}
