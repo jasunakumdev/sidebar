@@ -1,7 +1,7 @@
 {
   "name": "mui-react-sidebar",
   "private": false,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -61,5 +61,9 @@
   "resolutions": {
     "react": "19.0.0",
     "@mui/material": "7.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasunakumdev/sidebar.git"
   }
 }

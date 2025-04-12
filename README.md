@@ -25,13 +25,13 @@ This package helps you easily integrate a sidebar menu into your React applicati
 ## 🚀 Installation
 
 ```bash
-npm install test-mui-react-sidebar
+npm install mui-react-sidebar
 ```
 
 or
 
 ```bash
-yarn add test-mui-react-sidebar
+yarn add mui-react-sidebar
 ```
 
 ---
@@ -182,7 +182,7 @@ const theme = createTheme({
 | `badgeBgColor` | Background color of badge         | MUI default                        |
 | `badgeColor`   | Text color of badge               | MUI default                        |
 | `selected`     | Background color of selected item | `theme.palette.action.selected`    |
-| `menuIconTop`  | set menu icon top position        | 10                                 |
+| `menuIconTop`  | Set menu icon top position        | 10                                 |
 
 ---
 
