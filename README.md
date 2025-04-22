@@ -40,7 +40,7 @@ yarn add mui-react-sidebar
 
 ```tsx
 import React from 'react'
-import Sidebar from 'test-mui-react-sidebar'
+import Sidebar from 'mui-react-sidebar'
 import 'mui-react-sidebar/dist/styles.css'
 
 import {

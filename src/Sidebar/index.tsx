@@ -79,6 +79,7 @@ function Navbar({ data, logo, title, handleNavigation }: NavbarProps) {
           background: theme.palette.background.default,
           color: theme.palette.text.primary,
           textAlign: 'center',
+          zIndex: 1100,
         }}
       >
         <MenuIcon />

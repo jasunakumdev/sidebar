@@ -1,7 +1,7 @@
 {
   "name": "mui-react-sidebar",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.6",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc --emitDeclarationOnly && cp src/Sidebar/*.svg dist/",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && vite build && tsc --emitDeclarationOnly && cp src/Sidebar/*.svg dist/",
     "lint": "eslint .",
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
